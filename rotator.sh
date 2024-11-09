@@ -31,7 +31,7 @@ while true; do
     for target in "${target_array[@]}"; do
         # Start the proxy command
         echo "Rotating to $target..."
-        /usr/local/bin/proxy tcp --trace -p :"$PORT" -P "$target" &
+        /usr/local/bin/proxy tcp -p :"$PORT" -P "$target" &
 
         # Get the PID of the background process
         proxy_pid=$!
