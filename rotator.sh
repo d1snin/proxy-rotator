@@ -17,6 +17,8 @@
 # limitations under the License.
 #
 
+source .env
+
 # Ensure required environment variables are set
 if [ -z "$PORT" ] || [ -z "$TARGETS" ] || [ -z "$LIFETIME" ]; then
     echo "Required environment variables PORT, TARGETS, or LIFETIME not set in .env"
