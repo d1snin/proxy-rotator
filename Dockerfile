@@ -10,7 +10,7 @@ RUN curl -L -o /tmp/proxy-linux-amd64.tar.gz https://github.com/snail007/goproxy
 RUN /usr/local/bin/proxy --version || { echo "Failed to install goproxy"; exit 1; }
 
 WORKDIR /app
-COPY ../rotator.sh /app/rotator.sh
+COPY rotator.sh /app/rotator.sh
 
 RUN chmod +x /app/rotator.sh
 
